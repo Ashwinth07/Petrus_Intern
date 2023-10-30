@@ -162,3 +162,9 @@ print(common_elements)
 
 ------------------------------------------------------------
 
+
+Tuples
+------
+Similar to lists, but immutable 
+Example:my_tuple = (1, 2, 3, 'hello', True)
+
