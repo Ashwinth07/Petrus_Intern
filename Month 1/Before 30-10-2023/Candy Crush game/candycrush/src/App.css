@@ -1,0 +1,61 @@
+.app {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    /* margin-right: auto; */
+    margin: 12px auto;
+    margin-left: 300px;
+    
+  }
+  
+  .game {
+    display: grid;
+    grid-template-columns: repeat(8, 50px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    padding-left: 130px;
+  }
+  
+  .game img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .score {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  /* Add effects for drag-and-drop */
+  .game img:hover {
+    cursor: pointer;
+  }
+  
+  .game img:active {
+    transform: scale(1.05);
+  }
+  
+  /* Add animation for candy disappearance */
+  @keyframes disappear {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0);
+    }
+  }
+  
+  .game img.disappear {
+    animation: disappear 0.5s;
+  }
+  
+  /* Add a background for the game board */
+  .game-board {
+    background-color: #f5f5f5;
+    border: 5px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+  }
+  
